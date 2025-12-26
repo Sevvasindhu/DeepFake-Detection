@@ -1,4 +1,4 @@
-# DeepFake Image Detection
+# DeepFake  Detection
 
 This project detects whether an image is Real or Fake using a CNN model.
 
