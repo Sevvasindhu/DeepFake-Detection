@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DeepFake Detection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1 class="title">DeepFake Detection</h1>
+
+    <div class="video-box">
+        <video id="video" autoplay></video>
+    </div>
+
+    <div class="controls">
+        <button class="btn start" onclick="startDetection()">START</button>
+        <button class="btn stop" onclick="stopDetection()">STOP</button>
+        <button class="btn heatmap-btn" onclick="showHeatmap()" disabled>
+            SHOW HEATMAP
+        </button>
+    </div>
+
+    <div class="status-box">
+        <div id="result" class="status">Stopped</div>
+        <div id="confidence" class="confidence"></div>
+    </div>
+
+    <img id="heatmapImg" style="display:none; width:420px; margin-top:15px;">
+</div>
+
+<canvas id="canvas" width="420" height="320" style="display:none;"></canvas>
+
+<script src="script.js"></script>
+</body>
+</html>

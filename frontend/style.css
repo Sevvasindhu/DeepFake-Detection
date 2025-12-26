@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background: radial-gradient(circle at top, #0b1a2a, #020409);
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #eaeaea;
+}
+
+.container {
+    background: #0d1624;
+    padding: 35px 45px;
+    border-radius: 24px;
+    text-align: center;
+}
+
+.title {
+    font-size: 32px;
+    color: #21c7ff;
+    margin-bottom: 20px;
+}
+
+.video-box {
+    border: 3px solid #21c7ff;
+    border-radius: 16px;
+    padding: 8px;
+    margin-bottom: 20px;
+}
+
+video {
+    width: 420px;
+    height: 320px;
+    border-radius: 12px;
+    background: black;
+}
+
+.controls {
+    margin: 15px 0;
+}
+
+.btn {
+    font-size: 16px;
+    padding: 10px 24px;
+    margin: 5px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+.start { background: #00c853; }
+.stop { background: #d50000; }
+
+.heatmap-btn {
+    background: #cccccc;
+    color: #555;
+}
+
+.heatmap-btn:enabled {
+    background: #ffffff;
+    color: #000;
+}
+
+.status {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.confidence {
+    font-size: 18px;
+    margin-top: 6px;
+    color: #b0bec5;
+}
+
+.real { color: #00c853; }
+.fake { color: #d50000; }
